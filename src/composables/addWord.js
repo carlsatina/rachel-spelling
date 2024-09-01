@@ -6,7 +6,7 @@ const addWord = async (word) => {
 
     console.log("Addword: ", word.value)
     try {
-        response.value = await axios.post(process.env.VUE_APP_JSON_SERVER + '/data', {
+        response.value = await axios.post(process.env.VUE_APP_JSON_SERVER + '/rachel', {
             spelling: word.value
         })
     } catch (err) {

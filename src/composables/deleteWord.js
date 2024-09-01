@@ -5,7 +5,7 @@ const deleteWord = async (id) => {
     const response = ref (null)
 
     try {
-        response.value = await axios.delete(process.env.VUE_APP_JSON_SERVER + '/data/' + id)
+        response.value = await axios.delete(process.env.VUE_APP_JSON_SERVER + '/rachel/' + id)
     } catch (err) {
         console.log('addWord: ', err)
     }

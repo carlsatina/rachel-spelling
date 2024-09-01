@@ -5,7 +5,7 @@ const getAllWords = async () => {
     const response = ref (null)
 
     try {
-        response.value = await axios.get(process.env.VUE_APP_JSON_SERVER + '/data')
+        response.value = await axios.get(process.env.VUE_APP_JSON_SERVER + '/rachel')
     } catch (err) {
         console.log('getAllWords: ', err)
     }
