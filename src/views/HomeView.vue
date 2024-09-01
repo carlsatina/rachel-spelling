@@ -121,7 +121,7 @@ export default {
 
         onMounted(async () => {
 
-            const res = await axios.get(process.env.VUE_APP_JSON_SERVER + '/data')
+            const res = await axios.get(process.env.VUE_APP_JSON_SERVER + '/rachel')
             for (var x of res.data) {
                 test2.push(x.spelling)
             }
